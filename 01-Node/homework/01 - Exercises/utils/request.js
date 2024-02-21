@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-function request (url, callback) {
+function request(url, callback) {
   try {
     axios.get(url)
       .then((response) => {
@@ -8,7 +8,7 @@ function request (url, callback) {
       })
       .catch(error => {
         throw error
-      });   
+      });
   } catch (err) {
     callback(err);
   }
